@@ -1,0 +1,20 @@
+---
+title: "Untitled"
+output: html
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+```{r}
+#| label: setup
+#| include: false
+library(tidyverse)
+titanic <- data(gapminder)
+```
+# My Section Title
+My text followed by my figure.
+```{r}
+ggplot(titanic, aes(Fare, Age)) +
+  geom_point()
+```
